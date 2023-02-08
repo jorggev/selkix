@@ -1,0 +1,1003 @@
+/* -------------------------------------------------------------------------------- */
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Sintony', sans-serif;
+    outline: 2px solid rgba(229, 25, 25, 0) !important;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* ESTILOS GENERALES */
+
+body{
+    font-family: 'Sintony', sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-sticky{
+    background-color: rgba(0, 0, 0, 0.891);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a{
+    color: rgb(255, 255, 255, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.detalles{
+    color: white;
+    font-size: 1rem;
+}
+
+.fondo-426px{
+    display: none;
+}
+
+.fondo-360-425px{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS GENERALES DEL MAIN */
+
+.logo{
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.titulo{
+    width: 20%;
+    color: rgba(12, 12, 12, 0.8);
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS GENERALES DEL FOOTER */
+
+
+footer{
+    background-color: rgba(214, 21, 21, 0);
+    padding: 10px;
+    font-size: 14px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+}
+
+.social-icons{
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.icon{
+    margin: 5px;
+    height: 25px;
+}
+
+.divCopyright{
+    background-color: rgba(65, 246, 29, 0);
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+}
+
+
+.documentos-legales{
+    background-color: rgba(133, 11, 247, 0);
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer div a{
+    background-color: rgba(172, 255, 47, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA MODELOS.HTML */
+
+
+.modelos{
+    /* background: rgb(1, 32, 86); */
+    background: radial-gradient(circle, rgba(0,21,56,0.9373090300573355) 0%, rgba(7,59,144,1) 0%, rgba(0,170,255,1) 100%);
+    /* background: rgb(0,21,56);
+    background: radial-gradient(circle, rgba(0,21,56,0.9373090300573355) 0%, rgba(166,212,232,1) 0%, rgba(213,237,241,1) 100%); */
+    /* background: rgb(166,212,232);
+    background: radial-gradient(circle, rgba(166,212,232,1) 0%, rgba(117,193,205,1) 0%, rgba(166,212,232,1) 100%); */
+}
+
+
+.titulo1{
+    width: 20%;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;
+}
+
+
+.container{
+    background-color: rgba(0, 255, 89, 0);
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+}
+
+.card{
+    background-color: rgba(245, 245, 220, 0);
+    margin: 20px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(0.95);
+    transition: 1s;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.card-name{
+    /* background-color: rgba(210, 105, 30, 0); */
+    background: radial-gradient(circle, rgba(0,21,56,0.9373090300573355) 0%, rgba(7,59,144,1) 0%, rgba(0,170,255,1) 100%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .card-name p{
+    /* border-radius: 20px; */
+    font-size: 20px;
+    /* background-color: rgba(0, 0, 0, 0.408); */
+}
+
+.descubreMas{
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA NOSOTROS.HTML */
+
+
+.contendeorNosotros{
+    background-color: rgba(240, 46, 46, 0);
+    margin: 20px;
+    display: grid;
+    gap: 1rem;
+    font-size: 1rem;
+    color: rgb(233, 233, 233);
+    text-align: justify;
+}
+
+.descubre{
+    background-color: rgb(30, 30, 27);
+    border-radius: 22px;
+    height: 10vh;
+    /* width: 100%; */
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-descubre{
+    color: #ffff;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA CONTACTO.HTML */
+
+
+.form-contact{
+    background-color: rgba(188, 84, 10, 0);
+    margin: 20px 10px;
+    border: #ffffff solid 2px;
+    border-radius: 10px;
+}
+
+.header-form{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(102, 51, 153, 0);
+    margin-top: 20px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.contact-form{
+    background-color: rgba(42, 44, 165, 0);
+    display: grid;
+    height: 80vh;
+}
+
+.contact-form-hijo{
+    background-color: #ee000000;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 5px;
+}
+
+.form-item{
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.div-correo, .div-telefono{
+    display: grid;
+    grid-column: span 2;
+    width: 100%;
+}
+
+.inputs{
+    background-color: rgba(255, 0, 0, 0);
+    text-align: center;
+    background-color:#ffffff;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.input-correo, .input-telefono{
+    background-color: rgba(255, 0, 0, 0);
+    text-align: center;
+    background-color:#ffffff;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.div-model{
+    display: grid;
+    color: #ffff;
+    /* font-size: 25px; */
+    background-color: rgba(137, 43, 226, 0);
+    grid-column: span 2;
+    align-items: center;
+}
+
+.label{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.div-select{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+select{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form-textarea{
+    background-color: rgba(81, 255, 0, 0);
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    resize: none;
+    padding: 20px;
+    width: 80%;
+    height: 100px;
+}
+
+.footer-boton{
+    background-color: rgba(255, 20, 145, 0);
+    height: 40px;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-enviar{
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    border: #ffffff;
+    padding: 5px;
+    transition: 1s;
+}
+
+
+.boton-enviar:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+
+.opciones{
+    text-align: center;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* ESTILOS PARA BMWVISIONMNEXT.HTML */
+
+.bmw{
+    background-image: url(../img/autos/bmw-vision-m-next/BMW_Vision_M_NEXT_ruta_mov_fx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(15px);
+  }
+
+.grid-modelos-bmw{
+    /* background-color: rgba(188, 84, 10, 0.933); */
+    background-image: url(../img/autos/bmw-vision-m-next/BMW_Vision_M_NEXT_ruta_mov_fx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-detalles-reservas{
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.header-modelos{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 25px;
+}
+
+.titulobmw{
+    /* font-size: 45px; */
+    font-size: 35px;
+    color: rgb(26, 23, 23);
+}
+
+.detallesYreservas{
+    background-color: rgba(5, 199, 134, 0);
+    display: grid;
+    height: 70vh;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+}
+
+.detallesYreservas2{
+    /* font-size: 22px; */
+    font-size: 1rem;
+    margin-bottom: 100px;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.detalles-modelos{
+    background-color: rgba(0, 0, 0, 0.729);
+    color: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.reserva-bmw{
+    background-color: rgba(0, 0, 0, 0.729);
+    color: #ee0000;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* ESTILOS PARA CITROEN1919.HTML */
+.citroen{
+    font-family: 'Sintony', sans-serif;
+    background-image: url(../img/autos/citroen-19-19/citroen6-19-19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(15px);
+}
+
+.grid-modelos-citroen{
+    background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01-320px.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-citroen{
+    font-size: 40px;
+    color: rgb(26, 23, 23);
+}
+
+
+.reserva-citroen{
+    background-color: rgba(0, 0, 0, 0.729);
+    color: #1e56da;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA GEELYVISIONSTARBURST.HTML */
+
+
+.geely{
+    font-family: 'Sintony', sans-serif;
+    background-image: url(../img/autos/geely-vision-starburst/geely-vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(15px);
+}
+
+.grid-modelos-geely{
+    background-image: url(../img/autos/geely-vision-starburst/geely-vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulogeeyly{
+    /* font-size: 50px; */
+    font-size: 28px;
+    color: rgb(232, 227, 227);
+}
+
+
+.reserva-geely{
+    background-color: rgba(0, 0, 0, 0.81);
+    color: #f20d0d;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA MERCEDESBENZVISIONAVTR.HTML */
+
+
+.mercedesbenz{
+    font-family: 'Sintony', sans-serif;
+    /* background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png); */
+    background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concept-320px.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(15px);
+}
+
+.grid-modelos-mcb{
+    /* background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png); */
+    background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concept-320px.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-mcb{
+    /* font-size: 50px; */
+    font-size: 26px;
+
+    color: #ffffff;
+}
+
+
+.reserva-mcb{
+    background-color: rgba(0, 0, 0, 0.81);
+    color: #177bff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                                     */
+/* -------------------------------------------------------------------------------- */
+
+@media screen and (min-width:200px) {
+
+    .div-breve-descripcion{
+        display: none;
+    }
+
+}
+
+/* ----------------------------------426PX------------------------------------------ */
+
+
+@media screen and (min-width:426px) {
+
+    .header-sticky{
+        font-size: 17px;
+    }
+
+    .fondo-360-425px{
+        display: none;
+    }
+    .fondo-426px{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 96.3%;
+        object-fit: cover;
+    }
+
+    .div-breve-descripcion{
+        display: none;
+    }
+}
+/* ----------------------------------600PX------------------------------------------ */
+
+@media screen and (min-width:600px) {
+
+    .header-sticky{
+        font-size: 20px;
+    }
+
+    .header-form{
+        font-size: 22px;
+    }
+
+    .div-model .label{
+        font-size: 18px;
+    }
+
+
+/* ------------------------------------------------------------------- */
+    /* ESTILOS PARA MODELOS.HTML */
+
+    .titulobmw, .titulo-citroen, .titulogeeyly, .titulo-mcb{
+        font-size: 30px;
+    }
+
+    .grid-modelos-citroen{
+        background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01.jpg);
+    }
+
+    .mercedesbenz{
+        background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png);
+    }
+
+    .grid-modelos-mcb{
+        background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png);
+    }
+
+/* ------------------------------------------------------------------- */
+
+    .contact-form-hijo .inputs{
+        text-align: center;
+        background-color:#ffffff;
+        height: 50px;
+        width:60%;
+        border-radius: 10px;
+        border-color: white;
+    }
+
+    .descubre{
+        background-color: rgb(30, 30, 27);
+        font-size: 22px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 22px;
+    }
+
+    .div-breve-descripcion{
+        display: none;
+    }
+}
+
+/* ---------------------------------768PX------------------------------------------- */
+
+@media screen and (min-width:768px) {
+
+    .header-sticky{
+        font-size: 20px;
+    }
+
+    footer{
+        font-size: 16px;
+    }
+
+    .div-breve-descripcion{
+        display: none;
+    }
+
+    /* -------------------------------------------------------------- */
+    /* ESTILOS PARA MODELOS.HTML */
+
+    .titulobmw, .titulo-citroen, .titulogeeyly, .titulo-mcb{
+        font-size: 45px;
+    }
+
+}
+
+
+
+
+/* --------------------------------1024PX------------------------------------------- */
+
+@media screen and (min-width:1024px) {
+
+    /* -----------------------------HEADER-------------------------------------- */
+
+    .div-breve-descripcion{
+        display: none;
+    }
+
+    .header-sticky{
+        font-size: 22px;
+    }
+
+    /* ----------------------------MODELOS-------------------------------------- */
+
+     .container{
+        background-color: rgba(255, 213, 0, 0);
+        width: 100%;
+        /* padding: 10px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-content:flex-start;
+        align-items: center;
+
+
+    }
+
+    .breve-descripcion{
+        color: #ffffff;
+        text-align: justify;
+    }
+
+    .card{
+        margin: 0;
+        background-color: rgba(10, 208, 119, 0);
+        margin: 10px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        /* border: 2px solid rgba(255, 255, 255, 0.736); */
+    }
+
+    .card-name{
+        /* background-color: #315bf476; */
+        background: radial-gradient(circle, rgba(0,21,56,0.9373090300573355) 0%, rgba(7,59,144,1) 0%, rgba(0,170,255,1) 100%);
+    }
+
+    .card-name a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 1000px;
+
+    }
+
+    div .card-name p{
+        background-color: rgba(12, 206, 164, 0);
+        font-size: 2rem;
+    }
+
+    /* ----------------------------NOSOTROS-------------------------------------- */
+
+    .contendeorNosotros{
+        background-color: rgba(46, 240, 62, 0);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0px 80px;
+    }
+    
+    .contendor-quines-somos{
+        background-color: rgba(0, 100, 0, 0);
+        grid-column: span 4;
+    }
+    
+    
+    /* .mision{
+        background-color: rgba(189, 32, 139, 0.862);
+
+    }
+    
+    .vision{
+        background-color: rgba(137, 43, 226, 0.872);
+
+
+    }
+    
+    .objetivo{
+        background-color: rgba(255, 217, 0, 0.85);
+
+    } */
+    
+    .descubre{
+        background-color: rgba(236, 25, 25, 0);
+        grid-column: span 4;
+        align-items: start;
+    }
+    
+    
+    .quienesSomos{
+        margin: 10px;
+    }
+    
+    .texto{
+        background-color: rgba(255, 0, 0, 0);
+        text-align: justify;
+        margin: 10px;
+        font-size: 18px;
+    }
+    
+    .titulos{
+        display: flex;
+        text-align: left;
+        margin: 10px;
+    }
+    
+    .descripciones{
+        margin: 10px;
+        font-size: 18px;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .enlace-descubre{
+        font-size: 25px;
+        margin: 20px;
+        padding: 10px;
+        background-color: rgb(30, 30, 27);
+        border-radius: 22px;
+    }
+
+
+    /* ----------------------------CONTACTO-------------------------------------- */
+
+    .form-conteiner{
+        background-color: rgba(128, 255, 0, 0);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-form{
+
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(102, 51, 153, 0);
+        margin-top: 10px;
+        height: 40px;
+
+    }
+
+    .contact-form{
+        background-color: #1e56da00;
+        height: 50vh;
+    }
+
+    .form-contact{
+        background-color: rgba(188, 84, 10, 0);
+        width: 800px;
+        margin: 10px 10px;
+    }
+
+    .form-item{
+        background-color: rgba(0, 255, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    .div-correo, .div-telefono{
+        background-color: #ee000000;
+        display: grid;
+        align-items: center;
+        grid-column: span 1;
+    }
+
+    .inputs{
+        background-color:#ffffff00;
+        height: 35px;
+    }
+
+    .input-correo, .input-telefono{
+        width: 60%;
+    }
+
+    .div-model{
+        background-color: rgba(255, 127, 80, 0);
+    }
+
+    .div-model .label{
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .div-model .div-select{
+        background-color: #ee000000;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    select{
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .form-textarea{
+        background-color: rgba(81, 255, 0, 0);
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea{
+        height: 70px;
+    }
+
+}
+
+/* --------------------------------1200PX------------------------------------------- */
+
+@media screen and (min-width:1300px) {
+
+.div-breve-descripcion{
+    display: block;
+}
+
+}
