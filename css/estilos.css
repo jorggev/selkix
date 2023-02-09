@@ -27,16 +27,32 @@ a{
 
 .navbar{width: 100%;
     background-image: linear-gradient(to top, rgb(37, 32, 32), rgb(59, 67, 72));
-    }
-
-.navbar-brand, .nav-link, .dropdown-item{color: white!important;}
-
-
-.dropdown-menu{
-    background-image: linear-gradient(to top, rgb(37, 32, 32), rgb(59, 67, 72));
 }
 
+
+
+.nav-link:hover{color:  rgba(0,170,255,1) !important;}
+.navbar-brand:hover{color:  rgba(0,170,255,1) !important;}
+
+.navbar-brand, .nav-link{color: white!important;}
+
+.dropdown-divider{
+    background-color: rgba(0,170,255,1);
+}
+
+.dropdown-menu{
+    background-color: #faf7f7;
+}
+
+
+
+.dropdown-item{
+    color: #000000;
+}
+
+
 .dropdown-item:hover{
+    color: #ffffff;
     background-image: radial-gradient(circle, rgba(0,21,56,0.9373090300573355) 0%, rgba(7,59,144,1) 0%, rgba(0,170,255,1) 100%);
 }
 
