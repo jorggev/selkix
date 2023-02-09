@@ -26,15 +26,20 @@ a{
 }
 
 .navbar{width: 100%;
-    background-image: linear-gradient(to top, rgb(37, 32, 32), rgb(59, 67, 72));
+    background-image: linear-gradient(to right, rgb(37, 32, 32), rgb(57, 59, 61));
 }
 
+.nav-link:hover{
+    color:  rgba(0,170,255,1) !important;
+}
 
+.navbar-brand:hover{
+    color:  rgba(0,170,255,1) !important;
+}
 
-.nav-link:hover{color:  rgba(0,170,255,1) !important;}
-.navbar-brand:hover{color:  rgba(0,170,255,1) !important;}
-
-.navbar-brand, .nav-link{color: white!important;}
+.navbar-brand, .nav-link{
+    color: white!important;
+}
 
 .dropdown-divider{
     background-color: rgba(0,170,255,1);
@@ -43,8 +48,6 @@ a{
 .dropdown-menu{
     background-color: #faf7f7;
 }
-
-
 
 .dropdown-item{
     color: #000000;
