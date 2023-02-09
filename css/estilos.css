@@ -74,8 +74,6 @@ a{
 
 header nav ul{
     list-style: none;
-    display: flex;
-    gap: 1.5rem;
 }
 
 header nav ul li a{
