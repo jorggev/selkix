@@ -1,0 +1,34 @@
+// MERCEDESBENZVISIONAVTR.HTML
+/*-----MERCEDESBENZVISIONAVTR.HTML-----*/
+.mercedesbenz{
+    background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png);
+    @extend %bg-modelos-blur;
+    .grid-modelos-mcb{
+    background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concept-0034.jpg);
+    @extend %bg-modelos;
+    margin-top: 50px;
+    @extend %display-flex;
+    .grid-detalles-reservas{
+        .titulo-mcb{
+            @include titulo-modelos(35px, rgb(36, 133, 219), 40px);
+            text-align: center
+        }
+
+        .detallesYreservas{
+            @extend %detalles-reservas;
+            .detallesYreservas2{
+                @extend %detalles-reservas-dos;
+                .detalles-modelos{
+                    @extend %color-font;
+                    @extend %boton-modelos;
+                }
+                .reserva-mcb{
+                    color: rgb(36, 133, 219);
+                    @extend %boton-modelos;
+                }
+            }
+        }
+    }
+}
+}
+/*-----fin mercedesbenzvisionavtr.html-----*/

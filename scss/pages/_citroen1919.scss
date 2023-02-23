@@ -1,0 +1,32 @@
+// CITROEN1919.HTML
+/*-----CITROEN1919.HTML-----*/
+.citroen{
+    background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01-320px.jpg);
+    @extend %bg-modelos-blur;
+    .grid-modelos-citroen{
+        background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01-320px.jpg);
+        @extend %bg-modelos;
+        margin-top: 50px;
+        @extend %display-flex;
+        .grid-detalles-reservas{
+            .titulo-citroen{
+                @include titulo-modelos(40px, $titulo-bmw-citroen-mcb, 25px);
+            }
+            .detallesYreservas{
+                @extend %detalles-reservas;
+                .detallesYreservas2{
+                    @extend %detalles-reservas-dos;
+                    .detalles-modelos{
+                        @extend %color-font;
+                        @extend %boton-modelos;
+                    }
+                    .reserva-citroen{
+                        color: $color-letras-blue;
+                        @extend %boton-modelos;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----fin citroen.1919.html-----*/
