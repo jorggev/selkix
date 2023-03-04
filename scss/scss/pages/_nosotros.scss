@@ -1,0 +1,38 @@
+// NOSOTROS.HTML
+/*-----NOSTROS.HTML-----*/
+.contendeorNosotros{
+    margin: 20px;
+    display: grid;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    @extend %color-font;
+
+    div{
+        .quienesSomos{
+            @extend %color-font;
+        }
+        .texto{
+            @extend %color-font;
+        }
+    }
+
+    .descubre{
+        @extend %display-flex;
+        // background-color: rgb(30, 30, 27);
+        border-radius: 22px;
+        height: 10vh;
+        font-size: 20px;
+        align-items: center;
+        p{
+            .enlace-descubre{
+                @extend %display-flex;
+                @extend %color-font;
+                margin-top: 10px;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+}
+/* fin nostros.html */

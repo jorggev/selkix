@@ -11,9 +11,46 @@
     div{
         .quienesSomos{
             @extend %color-font;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                height: 64px;
+                width: 64px;
+            }
         }
         .texto{
             @extend %color-font;
+        }
+    }
+
+    .mision{
+        @extend %box-shadow;
+        .titulos{
+            @extend %display-flex-titulos-nosotros;
+            img{
+                @extend %iconos-nosotros;
+            }
+        }
+    }
+
+    .vision{
+        @extend %box-shadow;
+        .titulos{
+            @extend %display-flex-titulos-nosotros;
+            img{
+                @extend %iconos-nosotros;
+            }
+        }
+    }
+
+    .objetivo{
+        @extend %box-shadow;
+        .titulos{
+            @extend %display-flex-titulos-nosotros;
+            img{
+                @extend %iconos-nosotros;
+            }
         }
     }
 

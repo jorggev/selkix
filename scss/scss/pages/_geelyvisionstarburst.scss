@@ -1,0 +1,34 @@
+// GEELYVISIONSTARBURST.HTML
+/*-----GEELYVISIONSTARBURST.HTML-----*/
+.geely{
+    background-image: url(../img/autos/geely-vision-starburst/geely-vision.jpg);
+    @extend %bg-modelos-blur;
+    .grid-modelos-geely{
+        background-image: url(../img/autos/geely-vision-starburst/geely-vision.jpg);
+        @extend %bg-modelos;
+        @extend %display-flex;
+        .grid-detalles-reservas{
+            .header-modelos{
+                @extend %display-flex-modelos;
+                .titulogeeyly{
+                    @include titulo-modelos(28px, $titulo-geely, 25px);
+                }
+            }
+            .detallesYreservas{
+                @extend %detalles-reservas;
+                .detallesYreservas2{
+                    @extend %detalles-reservas-dos;
+                    .detalles-modelos{
+                        @extend %color-font;
+                        @extend %boton-modelos;
+                    }
+                    .reserva-geely{
+                        color: $color-letras-red;
+                        @extend %boton-modelos;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----fin geelyvisionstarburst.html-----*/

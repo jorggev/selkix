@@ -1,0 +1,14 @@
+// mixins
+
+//mixin CON parametros
+
+@mixin width-fontsize($width, $font-size){
+    width: $width;
+    font-size: $font-size;
+}
+
+@mixin titulo-modelos($font-size, $color, $margin-top){
+    font-size: $font-size;
+    color: $color;
+    margin-top: $margin-top;
+}

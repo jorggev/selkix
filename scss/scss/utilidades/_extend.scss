@@ -83,17 +83,6 @@
     height: auto;
 }
 
-%display-flex-titulos-nosotros{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-%iconos-nosotros{
-    height: 50px;
-    width: 50px;
-}
-
 %detalles-reservas{
     display: grid;
     height: 70vh;
@@ -110,10 +99,4 @@
 
 %display-none{
     display: none;
-}
-
-%box-shadow{
-    padding: 5px;
-    border: 3px solid white;
-    box-shadow: 2px 2px 10px 0 rgb(41, 37, 37);
 }

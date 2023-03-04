@@ -1,0 +1,46 @@
+// MODELOS.HTML
+/*-----MODELOS.HTML-----*/
+.container{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    .card-name{
+        @extend %bg-color;
+        margin: 10px;
+        @extend %display-flex;
+        p{
+            font-size: 20px;
+            .descubreMas{
+                padding: 10px;
+                list-style: none;
+                text-decoration: none;
+                @extend %color-font;
+            }
+        }
+    }
+    .card{
+        @extend %bg-color;
+        border: transparent;
+        margin: 20px;
+        transition: 1s;
+        &:hover{
+            transform: scale(0.95);
+            transition: 1s;
+        }
+        .img{
+            @extend %max-width-hieght;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        div{
+            p{
+                @extend %color-font;;
+                text-align: justify;
+            }
+        }
+        
+    }
+}
+/*-----fin modelos.html-----*/

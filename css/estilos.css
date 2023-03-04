@@ -26,7 +26,7 @@ div .form-contact .contact-form .contact-form-hijo .form-item .inputs, div .form
   width: 100%;
   height: 100%; }
 
-main div .logo, main h1 .titulo {
+main h1 .titulo {
   margin: auto;
   position: relative; }
 
@@ -61,6 +61,15 @@ div .form-contact .contact-form .contact-form-hijo .form-item .inputs, div .form
   border-radius: 20px;
   border: 1px solid white; }
 
+.contendeorNosotros .mision .titulos, .contendeorNosotros .vision .titulos, .contendeorNosotros .objetivo .titulos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.contendeorNosotros .mision .titulos img, .contendeorNosotros .vision .titulos img, .contendeorNosotros .objetivo .titulos img {
+  height: 50px;
+  width: 50px; }
+
 .bmw .grid-modelos-bmw .grid-detalles-reservas .detallesYreservas, .citroen .grid-modelos-citroen .grid-detalles-reservas .detallesYreservas, .geely .grid-modelos-geely .grid-detalles-reservas .detallesYreservas, .mercedesbenz .grid-modelos-mcb .grid-detalles-reservas .detallesYreservas {
   display: grid;
   height: 70vh;
@@ -72,6 +81,11 @@ div .form-contact .contact-form .contact-form-hijo .form-item .inputs, div .form
   margin-bottom: 100px;
   display: flex;
   justify-content: center; }
+
+.contendeorNosotros .mision, .contendeorNosotros .vision, .contendeorNosotros .objetivo {
+  padding: 5px;
+  border: 3px solid white;
+  box-shadow: 2px 2px 10px 0 #292525; }
 
 /*-----MODELOS.HTML-----*/
 .container {
@@ -116,6 +130,13 @@ div .form-contact .contact-form .contact-form-hijo .form-item .inputs, div .form
   gap: 1rem;
   font-size: 1rem;
   text-align: justify; }
+  .contendeorNosotros div .quienesSomos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .contendeorNosotros div .quienesSomos img {
+      height: 64px;
+      width: 64px; }
   .contendeorNosotros .descubre {
     border-radius: 22px;
     height: 10vh;
@@ -252,7 +273,7 @@ div .form-contact {
 /*-----fin geelyvisionstarburst.html-----*/
 /*-----MERCEDESBENZVISIONAVTR.HTML-----*/
 .mercedesbenz {
-  background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png); }
+  background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concept-0034.jpg); }
   .mercedesbenz .grid-modelos-mcb {
     background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concept-0034.jpg);
     margin-top: 50px; }
@@ -432,12 +453,17 @@ div .form-contact {
     font-size: 18px; }
   .flex-left, .contendeorNosotros .mision .titulos, .contendeorNosotros .vision .titulos, .contendeorNosotros .objetivo .titulos {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
     margin: 10px; }
   .mq-correo-telefono, .form-conteiner .form-contact .contact-form .contact-form-hijo .div-correo, .form-conteiner .form-contact .contact-form .contact-form-hijo .div-telefono {
     display: grid;
     align-items: center;
     grid-column: span 1; }
+  .iconos-nosotros-1024px, .contendeorNosotros .mision .titulos img, .contendeorNosotros .vision .titulos img, .contendeorNosotros .objetivo .titulos img {
+    height: 64px;
+    width: 64px; }
   /* -----------------------------HEADER-------------------------------------- */
   .header-sticky {
     font-size: 22px; }
@@ -461,7 +487,6 @@ div .form-contact {
         text-align: justify; }
   /* ----------------------------NOSOTROS-------------------------------------- */
   .contendeorNosotros {
-    background-color: rgba(46, 240, 62, 0);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -506,7 +531,7 @@ div .form-contact {
         .form-conteiner .form-contact .contact-form .contact-form-hijo .form-item {
           height: 70px; }
           .form-conteiner .form-contact .contact-form .contact-form-hijo .form-item .inputs {
-            height: 50x;
+            height: 50px;
             width: 60%; }
         .form-conteiner .form-contact .contact-form .contact-form-hijo .div-correo .form-item .input-correo {
           width: 60%; }
@@ -566,6 +591,9 @@ a {
     position: sticky; }
     .header-sticky .navbar .container-fluid .navbar-brand {
       color: white !important; }
+      .header-sticky .navbar .container-fluid .navbar-brand .logo {
+        height: 45px;
+        margin-right: 15px; }
       .header-sticky .navbar .container-fluid .navbar-brand:hover {
         color: #00aaff !important; }
     .header-sticky .navbar .container-fluid .nav-link {
@@ -592,18 +620,14 @@ main div .fondo-360-425px {
 main div .fondo-426px {
   display: none; }
 
-main div .logo {
-  top: 20px;
-  display: block; }
-
 main h1 .titulo {
   color: rgba(12, 12, 12, 0.8);
-  margin-top: 15px;
+  top: 55px;
   font-size: 40px; }
 
 main h1 .titulo1 {
   margin: auto;
-  margin-top: 15px; }
+  margin-top: 50px; }
 
 /*-----estilos generales del footer-----*/
 footer {
@@ -622,6 +646,6 @@ footer {
     padding: 10px; }
     footer .social-icons .icon {
       margin: 5px;
-      height: 25px; }
+      height: 30px; }
 
 /* fin del footer */

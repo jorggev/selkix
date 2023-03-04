@@ -1,0 +1,39 @@
+// BMWVISIONMNEXT.HTML
+/*-----BMWVISIONMNEXT.HTML-----*/
+.bmw{
+    background-image: url(../img/autos/bmw-vision-m-next/BMW_Vision_M_NEXT_ruta_mov_320px.jpg);
+    @extend %bg-modelos-blur;
+    .header-sticky{
+        @extend %display-flex-modelos;
+        @include width-fontsize(100%, 15px);
+        position: sticky;
+        top: 0; 
+        z-index: 1;
+    }
+    .grid-modelos-bmw{
+        background-image: url(../img/autos/bmw-vision-m-next/BMW_Vision_M_NEXT_ruta_mov_fx.jpg);
+        @extend %bg-modelos;
+        @extend %display-flex;
+        .grid-detalles-reservas{
+                .titulobmw{
+                    @extend %display-flex-modelos;
+                    @include titulo-modelos(35px, $titulo-bmw-citroen-mcb, 70px);
+                }
+            .detallesYreservas{
+                @extend %detalles-reservas;
+                .detallesYreservas2{
+                    @extend %detalles-reservas-dos;
+                    .detalles-modelos{
+                        @extend %color-font;
+                        @extend %boton-modelos;
+                    }
+                    .reserva-bmw{
+                        color: $color-letras-red;
+                        @extend %boton-modelos;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----fin bmwvisionmnext.html-----*/

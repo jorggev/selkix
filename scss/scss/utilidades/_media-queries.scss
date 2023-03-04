@@ -2,6 +2,35 @@
 /*                                MEDIA QUERIES                                     */
 /* -------------------------------------------------------------------------------- */
 
+
+
+@media screen and (min-width:200px) {
+
+    .container{
+        .card{
+            background: none;
+            .div-breve-descripcion{
+                display: none;
+            }
+        }
+    }
+
+    .contendeorNosotros{
+        .descubre{
+            p{
+                .enlace-descubre{
+                    background-color: rgb(30, 30, 27);
+                    font-size: 20px;
+                    margin: 20px;
+                    padding: 10px;
+                    border-radius: 22px;
+                }
+            }
+        }
+    }
+
+}
+
 /* ----------------------------------426PX------------------------------------------ */
 
 
@@ -14,24 +43,33 @@
 
     body{
         .header-sticky{
-            font-size: 18px;
+            font-size: 17px;
         }
     }
 
     main{
         div{
+            .fondo-360-425px{
+                display: none;
+            }
             .fondo-426px{
                 display: block;
                 position: absolute;
-                width: 100%;
-                height: 96.3%;
                 object-fit: cover;
                 @extend .max-width-hieght;
             }
         }
     }
 
-    // modelos-html
+    .container{
+        .card{
+            background: none;
+            .div-breve-descripcion{
+                display: none;
+            }
+        }
+    }
+
     .contendeorNosotros{
         .descubre{
             p{
@@ -41,27 +79,6 @@
                     margin: 20px;
                     padding: 10px;
                     border-radius: 22px;
-                }
-            }
-        }
-    }
-
-    // CONTACTO.HTML
-    /*-----CONTACTO.HTML-----*/
-    div{
-        .form-contact{
-            .header-form{
-                h2{
-                    font-size: 23px;
-                }
-            }
-            .contact-form{
-                .contact-form-hijo{
-                    .form-item{
-                        .inputs{
-                            width: 200px;
-                        }
-                    }
                 }
             }
         }
@@ -82,23 +99,10 @@
 
     body{
         .header-sticky{
-            font-size: 25px;
-        }
-
-        footer{
-            font-size: 15px;
+            font-size: 20px;
         }
     }
 
-    .card-name{
-        p{
-            .descubreMas{
-                font-size: 22px;
-            }
-        }
-    }
-
-    //contacto.html
     .form-conteiner{
         .form-contact{
             .header-form{
@@ -122,16 +126,26 @@
     }
 
 
-    //citroen.html
-    .citroen{
-        background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01.jpg);
-        .grid-modelos-citroen{
-            background-image: url(../img/autos/citroen-19-19/citroen-19-19-concept_01.jpg);
-            margin-top: 45px;
+    .grid-modelos-bmw{
+        .grid-detalles-reservas{
+            .header-modelos{
+                .titulo-citroen{
+                    @extend .font-size-titulos-30px;
+                }
+            }
         }
     }
 
-    //geely.html
+    .grid-modelos-citroen{
+        .grid-detalles-reservas{
+            .header-modelos{
+                .titulobmw{
+                    @extend .font-size-titulos-30px;
+                }
+            }
+        }
+    }
+
     .grid-modelos-geely{
         .grid-detalles-reservas{
             .header-modelos{
@@ -142,15 +156,14 @@
         }
     }
 
-    //mcb.html
-    .mercedesbenz{
-        .grid-modelos-mcb{
-            background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-conceptt.png);
-            .grid-detalles-reservas{
+
+    .grid-modelos-mcb{
+        .grid-detalles-reservas{
+            .header-modelos{
                 .titulo-mcb{
                     color: $titulo-mcb-600px;
                     @extend .font-size-titulos-30px;
-            }
+                }
             }
         }
     }
@@ -163,8 +176,95 @@
         }
     }
 
-    /* ------------------------------------------------------------------- */
+    // .mercedesbenz{
+    //     background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png);
+    //     .grid-modelos-mcb{
+    //         background-image: url(../img/autos/mercedes-benz-vision-avtr/mercedes-benz-vision-avtr-concepttt.png);
+    //     }
+    // }
 
+
+/* ------------------------------------------------------------------- */
+
+    .form-conteiner{
+        .form-contact{
+            margin: 0;
+            border: $color-letras solid 2px;
+            border-radius: 10px;
+            width: 100%;
+            .contact-form-hijo{
+                margin: 2px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, auto);
+                gap: 5px; 
+                .form-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                .div-correo{
+                    div{
+                        .input-correo{
+                            width: 80%;
+                        }
+                    }
+                }
+                .div-telefono{
+                    div{
+                        .input-telefono{
+
+                            width: 80%;
+                        }
+                    }
+                }
+                .div-model{
+                    display: grid;
+                    grid-column: span 2;
+                    align-items: center;
+                    .label{
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 1rem;
+                    }
+                    .div-select{
+                        select{
+                            cursor: pointer;
+                            font-size: 14px;
+                            padding: 5px;
+                            border-radius: 10px;
+                            .opciones{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .form-textarea{
+                    grid-column: span 2;
+                    textarea{
+                        text-align: center;
+                        border-radius: 10px;
+                        resize: none;
+                        padding: 20px;
+                        height: 100px;
+                    }
+                }
+                .footer-boton{
+                    height: 40px;
+                    grid-column: span 2;
+                    .boton-enviar{
+                        cursor: pointer;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        border: white;
+                        padding: 5px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
 
     .contendeorNosotros{
         .descubre{
@@ -181,15 +281,7 @@
     }
 
 
-
     .container{
-        .card-name{
-            p{
-                .descubreMas{
-                    font-size: 25px;
-                }
-            }
-        }
         .card{
             background: none;
             .div-breve-descripcion{
@@ -208,7 +300,7 @@
     .font-size-titulos{
         font-size: 45px;
     }
-
+    
     /*-----------------------------------------------------------------------------*/
 
     .body-general{
@@ -247,7 +339,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(5, auto);
-                gap: 5px;
+                gap: 5px; 
                 .form-item{
                     display: flex;
                     justify-content: center;
@@ -330,30 +422,32 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        // backdrop-filter: blur(15px);
         .grid-modelos-bmw{
             .grid-detalles-reservas{
-                .titulobmw{
-                    @extend .font-size-titulos;
+                .header-modelos{
+                    .titulobmw{
+                        @extend .font-size-titulos;
+                    }
                 }
-            }   
-        } 
+            }
+        }
     }
 
 
-    .citroen{
-        .grid-modelos-citroen{
-            .grid-detalles-reservas{
+    .grid-modelos-citroen{
+        .grid-detalles-reservas{
+            .header-modelos{
                 .titulo-citroen{
                     @extend .font-size-titulos;
                 }
-            }   
-        } 
+            }
+        }
     }
-    
 
-    .geely{
-        .grid-modelos-geely{
-            .grid-detalles-reservas{
+    .grid-modelos-geely{
+        .grid-detalles-reservas{
+            .header-modelos{
                 .titulogeely{
                     @extend .font-size-titulos;
                 }
@@ -361,11 +455,12 @@
         }
     }
 
-    .mercedesbenz{
-        .grid-modelos-mcb{
-            .grid-detalles-reservas{
+
+    .grid-modelos-mcb{
+        .grid-detalles-reservas{
+            .header-modelos{
                 .titulo-mcb{
-                    color: antiquewhite;
+                    color: $titulo-mcb-600px;
                     @extend .font-size-titulos;
                 }
             }
@@ -399,8 +494,6 @@
 
     .flex-left{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         text-align: left;
         margin: 10px;
     }
@@ -410,13 +503,6 @@
         align-items: center;
         grid-column: span 1;
     }
-
-    .iconos-nosotros-1024px{
-        height: 64px;
-        width: 64px;
-    }
-
-
 
     /* -----------------------------HEADER-------------------------------------- */
 
@@ -436,8 +522,11 @@
        align-items: center;
        .card-name{
             p{
-                .descubreMas{
-                    font-size: 35px;
+                // font-size: 2rem;
+                a{
+                    font-size: 32px;
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
@@ -466,11 +555,12 @@
     /* ----------------------------NOSOTROS-------------------------------------- */
 
     .contendeorNosotros{
+        background-color: rgba(46, 240, 62, 0);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: flex-start;
-        margin: 0px 80px;        
+        padding: 1px;
         .contendor-quines-somos{
             background-color: rgba(0, 100, 0, 0);
             grid-column: span 4;
@@ -486,11 +576,7 @@
         }
         .mision{
             .titulos{
-                
                 @extend .flex-left;
-                img{
-                    @extend .iconos-nosotros-1024px;
-                }
             }
             .descripciones{
                 @extend .text;
@@ -499,9 +585,6 @@
         .vision{
             .titulos{
                 @extend .flex-left;
-                img{
-                    @extend .iconos-nosotros-1024px;
-                }
 
             }
             .descripciones{
@@ -511,9 +594,6 @@
         .objetivo{
             .titulos{
                 @extend .flex-left;
-                img{
-                    @extend .iconos-nosotros-1024px;
-                }
             }
             .descripciones{
                 @extend .text;
@@ -555,7 +635,7 @@
                 h2{
                     font-size: 30px;
                 }
-
+        
             }
             .contact-form{
                 display: grid;
@@ -566,7 +646,6 @@
                         height: 70px;
                         .inputs{
                             height: 50px;
-                            width: 60%;
                         }
                     }
                     .div-correo{
@@ -611,32 +690,18 @@
             }
         }
     }
-
-
-    .citroen{
-        .grid-modelos-citroen{
-            margin-top: 55px;
-        }
-    }
 }
 
 /* --------------------------------1300PX------------------------------------------- */
 
 @media screen and (min-width:1300px) {
 
-    //modelos.html
     .container{
         .card{
             a{
                 .img{
                     width: 100%;
                     height: 500px;
-                    object-fit: cover;
-                }
-
-                .img-geely{
-                    width: 100%;
-                    height: 800px;
                     object-fit: cover;
                 }
             }
@@ -647,5 +712,11 @@
             }
         }
     }
-}
-/* fin media queries */
+
+    .geely{
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+    }
+    /* fin media queries */
